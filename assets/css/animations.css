@@ -1,0 +1,23 @@
+@keyframes fadeInUp {
+    0% { transform: translateY(9px); opacity: 0;}
+    100% { transform: translateY(-3px); opacity: 1;}
+}
+
+@keyframes fadeInDown {
+    0% { transform: translateX(9px); opacity: 0;}
+    100% { transform: translateX(-3px); opacity: 1;}
+}
+
+@keyframes fadeToShake {
+    0% { transform: rotate(7deg);}
+    50% { transform: rotate(0deg);}
+    100% { transform: rotate(-7deg);}
+}
+
+@media screen and (max-width: 768px) {
+    @keyframes fadeInDown {
+        0% { left: -110%; opacity: 0;}
+        100% { left: -100%; opacity: 1;}
+    }
+}
+
