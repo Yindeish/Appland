@@ -1,25 +1,11 @@
 {
-  "name": "applandwebsite",
-  "version": "1.0.0",
-  "description": "",
-  "main": "main.js",
-  "scripts": {
-    "build": "babel src -d lib"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Yindeish/Appland.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Yindeish/Appland/issues"
-  },
-  "homepage": "https://github.com/Yindeish/Appland#readme",
-  "devDependencies": {
-    "@babel/cli": "^7.19.3",
-    "@babel/core": "^7.20.2",
-    "@babel/preset-env": "^7.20.2"
+    "name": "appland-website",
+    "version": "1.0.0",
+     "scripts": {
+       "build": "babel src -d lib"
+     },
+    "devDependencies": {
+        "@babel/cli": "^7.0.0",
+        "@babel/core": "^7.0.0"
+    }
   }
-}
