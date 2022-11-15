@@ -12,6 +12,14 @@
         width: 95vw !important;
     }
 
+    .row {
+        grid-template-columns: 1fr !important;
+    }
+
+    .pricing .row {
+        grid-template-columns: 80% !important;
+    }
+
     /* ==== Header Section ====== */
 
     header .navbar .nav-link-container {
@@ -22,56 +30,21 @@
 
     /* ==== Hero Section ====== */
 
-    #hero .container .row .col-lg-6.order-1 {
-        /* height: 45vh !important; */
-        /* margin-left: 27.5vw; */
-    }
-
-    #hero .container .row .col-lg-6.order-1 h1 {
-        margin-top: -6em;
-    }
-    /*  */
-    #hero .row .col-lg-6.order-1 {
-        grid-column: 1/-1 !important;
-        width: fit-content !important;
-        height: fit-content !important;
-        padding-top: 0em !important;
-        margin: auto ;
-        z-index: 20;
-        /* background-color: #201e1fa5 !important; */
-        background-color: white !important;
-        color: white !important;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: absolute !important;
-        top: 45%;
-        left: 25%;
-        background-color: green;
-        z-index: 3;
-    }
-
     #hero {
         position: relative !important;
     }
 
     #hero::before {
-        position: absolute !important;
-        top: 0;
-        left: 0;
-        content: '';
-        display: block;
-        background-color: #201e1fa5 !important;
-        background-color: red !important;
-        width: 100% !important;
-        height: 100vh;
-        z-index: 3;
+        display: none !important;
     }
 
-    .row .col-lg-6.order-1 > div {
-        width: 100% !important;
-        height: 100% !important;
-        /* padding: 4em !important; */
+    #hero .row > .col-lg-6.order-1 > div {
+        padding: 1em !important;
+        padding-top: 2em !important;
+    }
+
+    .col-lg-6.order-1 h1 {
+        margin-top: 0em !important;
     }
 
     #hero .container .row .col-lg-6.order-1 #google-play {
@@ -95,75 +68,68 @@
 
     /* ==== Gallery Section ====== */
 
-    .gallery {
-        margin-bottom: 6em !important;
+    .gallery .container {
+        flex-direction: column;
     }
 
-    .swiper-wrapper.image-slider #radio1 {
-        left: 20% !important;
-    }
-    .swiper-wrapper.image-slider #radio2 {
-        left: 25% !important;
-    }
-    .swiper-wrapper.image-slider #radio3 {
-        left: 30% !important;
-    }
-    .swiper-wrapper.image-slider #radio4 {
-        left: 35% !important;
-    }
-    .swiper-wrapper.image-slider #radio5 {
-        left: 40% !important;
-    }
-    .swiper-wrapper.image-slider #radio6 {
-        left: 45% !important;
-    }
-    .swiper-wrapper.image-slider #radio7 {
-        left: 50% !important;
-    }
-    .swiper-wrapper.image-slider #radio8 {
-        left: 55% !important;
-    }
-    .swiper-wrapper.image-slider #radio9 {
-        left: 60% !important;
-    }
-    .swiper-wrapper.image-slider #radio10 {
-        left: 65% !important;
-    }
-    .swiper-wrapper.image-slider #radio11 {
-        left: 70% !important;
-    }
-    .swiper-wrapper.image-slider #radio12 {
-        left: 75% !important;
+    .gallery .container .section-title {
+        margin-bottom: 0em !important;
+        justify-content: unset !important;
+        gap: .5em;
+        height: 23vh !important;
     }
 
     /* ==== Testimonial Section ====== */
 
+    #testimonials.testimonials {
+        height: 83vh !important;
+    }
+
     .swiper-pagination-btn {
-        top: 104%;
         width: 8px;
     }
 
     #swiper-pagination-btn-1 {
-        left: 35%;
+        left: 40% !important;
     }
     
     #swiper-pagination-btn-2.swiper-pagination-btn {
-        left: 40% !important;
-    }
-    #swiper-pagination-btn-3.swiper-pagination-btn {
         left: 45% !important;
     }
-    #swiper-pagination-btn-4.swiper-pagination-btn {
+
+    #swiper-pagination-btn-3.swiper-pagination-btn {
         left: 50% !important;
     }
-    #swiper-pagination-btn-5.swiper-pagination-btn {
+
+    #swiper-pagination-btn-4.swiper-pagination-btn {
         left: 55% !important;
     }
-    
+
+    #swiper-pagination-btn-5.swiper-pagination-btn {
+        left: 60% !important;
+    }
+
     .swiper-pagination-btn-active {
         width: 12px !important;
     }
-    
+
+    .testimonials .container {
+        padding-top: 1em;
+        gap: 0em !important;
+    }
+
+    .section-title {
+        margin-bottom: 0em;
+    }
+
+    .testimonials .testimonials-slider.swiper {
+        height: fit-content !important;
+    }
+
+    .testimonials .swiper-slide .testimonial-item {
+        height: fit-content !important;
+    }
+
     /* ==== FAQ Section ====== */
 
     .faq .container .accordion-list ul {
@@ -173,15 +139,20 @@
 
     /* ==== Contact Section ====== */
 
+    .contact {
+        padding-bottom: 0em !important;
+        height: 197vh !important;
+    }
+
+    #contact.contact .container {
+        height: unset !important;
+        max-height: 45vh !important;
+    }
+
     #contact.contact .container > .row > .col-lg-6:nth-child(2) {
         padding: 0em !important;
         margin: auto !important;
-        width: 80vh !important;
-    }
-
-    #contact.contact .container > .row > .col-lg-6:nth-child(2) .php-email-form {
-        max-width: 80% !important;
-        margin-left: 13%;
+        margin-top: 0em !important;
     }
 
     /* ==== Footer Section ====== */
@@ -205,7 +176,6 @@
         flex-direction: column;
         font-size: small;
     }
-    
 
 }
 
@@ -241,12 +211,11 @@
     }
 
     /* ==== Pricing Section ====== */
-    
-    .pricing .row.no-gutters {
-        grid-template-columns: 85% !important;
-    }
 
-    /* ==== Contact Section ====== */
+    #pricing-container.row.no-gutters.pricing-container {
+        width: 100%;
+        height: fit-content !important;
+    }
 
     .contact .container > .row {
         grid-template-columns: 1fr;

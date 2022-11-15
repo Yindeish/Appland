@@ -241,8 +241,6 @@
     }
 
     .row .col-lg-6.order-1 > div {
-        width: 100% !important;
-        height: 100% !important;
         padding: 4em !important;
     }
     
@@ -329,7 +327,9 @@
     .testimonials .swiper-slide .testimonial-item {
         width: 80% !important;
         margin: auto;
+        padding-bottom: 1em !important;
         padding-right: 1em !important;
+        margin-top: -1em !important;
     }
 
     .swiper-slide .testimonial-item img {
@@ -338,7 +338,6 @@
         border: 7px solid white !important;
         border-radius: .5em !important;
         margin-left: -6em !important;
-        /* margin-right: 10em!important; */
     }
     
     .swiper-slide .testimonial-item h3 {
@@ -359,7 +358,6 @@
     .swiper-slide .testimonial-item i {
         color: rgba(211, 211, 211, 0.776);
     }
-    
 
     .swiper-pagination-btn {
         position: absolute;
@@ -395,9 +393,6 @@
     .pricing .row.no-gutters {
         width: 100%;
         height: fit-content !important;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        align-content: stretch;
     }
     
     .pricing .row.no-gutters .col-lg-4.box {
@@ -424,6 +419,10 @@
 
 @media screen and (min-width: 413px) and (max-width: 540px) { 
 
+    header .navbar .nav-link-container.nav-link-container-active .after {
+        top: 33% !important;
+    }
+
     /* ==== Features Section ====== */
 
     .features .row.no-gutters .col-xl-7 {
@@ -437,6 +436,51 @@
 
     .row.no-gutters .col-md-6.icon-box {
         flex-direction: column;
+    }
+
+    /* ====Gallery Section ====== */
+
+    .gallery .container {
+        gap: 2em;
+    }
+
+    /* ==== Testimonials Section ====== */
+
+    .swiper-pagination-btn {
+        width: 8px;
+    }
+
+    #swiper-pagination-btn-1 {
+        left: 40% !important;
+    }
+    
+    #swiper-pagination-btn-2.swiper-pagination-btn {
+        left: 45% !important;
+    }
+
+    #swiper-pagination-btn-3.swiper-pagination-btn {
+        left: 50% !important;
+    }
+
+    #swiper-pagination-btn-4.swiper-pagination-btn {
+        left: 55% !important;
+    }
+
+    #swiper-pagination-btn-5.swiper-pagination-btn {
+        left: 60% !important;
+    }
+
+    .swiper-pagination-btn-active {
+        width: 12px !important;
+    }
+
+    .testimonials .container {
+        padding-top: 1em;
+        gap: 0em !important;
+    }
+
+    .section-title {
+        margin-bottom: 0em;
     }
 
     /* ==== Contact Section ====== */
@@ -453,8 +497,103 @@
         grid-row: span 1;
     }
 
+    .contact .container > .row > .col-lg-6:nth-child(2) {
+        height: fit-content !important;
+        padding: 1em 0em !important;
+        margin-top: -13em !important;
+    }
+
     .contact .container > .row > .col-lg-6 > .row .info {
         padding-top: 2em !important;
     }
 
+    /* ==== Contact Section ====== */
+
+    footer .footer-top {
+        background-color: black;
+        color: white;
+    }
+
+    footer .footer-top .container .row {
+        grid-template-columns: 1fr !important;
+        grid-template-rows: minmax(100px, auto) minmax(100px, auto) minmax(100px, auto) minmax(100px, auto) !important;
+    }
+
+    footer .footer-top .container .row .col-lg-3 li a {
+        color: grey;
+    }
+    
+    footer .footer-top .container .row .col-lg-3 li a:hover {
+        color: white !important;
+    }
+
 }
+
+@media screen and (max-width:414px) { 
+    
+     /* ==== Hero Section ====== */
+
+     #hero {
+        background-position: 0% 0% !important;
+        height: 46vh !important;
+    }
+
+    /* ==== Gallery Section ====== */
+
+    .gallery .container {
+        gap: 0em !important;
+    }
+
+    #gallery .carousel-inner {
+        height: 40vh !important;
+    }
+
+    /* ==== Testimonials Section ====== */
+
+    #testimonials.testimonials {
+        height: 57vh !important;
+    }
+
+    .testimonials .swiper-slide .testimonial-item {
+        height: fit-content !important;
+        padding-bottom: 1em !important;
+    }
+
+    /* ==== Contact Section ====== */
+
+    .contact {
+        height: 133vh !important;
+    }
+
+    .contact .container > .row > .col-lg-6:nth-child(2) {
+        height: fit-content !important;
+        padding: 1em 0em !important;
+        margin-top: -13em !important;
+    }
+
+    .contact .container > .row > .col-lg-6 > .row .info {
+        padding-top: 2em !important;
+    }
+
+    /* ==== Contact Section ====== */
+
+    footer .footer-top {
+        background-color: black;
+        color: white;
+    }
+
+    footer .footer-top .container .row {
+        grid-template-columns: 1fr !important;
+        grid-template-rows: minmax(100px, auto) minmax(100px, auto) minmax(100px, auto) minmax(100px, auto) !important;
+    }
+
+    footer .footer-top .container .row .col-lg-3 li a {
+        color: grey;
+    }
+    
+    footer .footer-top .container .row .col-lg-3 li a:hover {
+        color: white !important;
+    }
+
+}
+
