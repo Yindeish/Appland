@@ -6,7 +6,6 @@ setInterval(() => {
         count = 1;
     }; 
     var transitionSequence = [...document.querySelectorAll('.testimonials .swiper-slide')][0].getBoundingClientRect().width;
-    // var value = -577 * count;
     var value = -transitionSequence * count;
     swiperWrapper.style.transform = `translateX(${value}px)`;
     if ( count <= 5 ) {
