@@ -534,8 +534,12 @@
      /* ==== Hero Section ====== */
 
      #hero {
-        background-position: 0% 0% !important;
+        background-position: 50% 15% !important;
         height: 46vh !important;
+    }
+
+    #hero .container .row .col-lg-6.order-1 {
+        margin-top: 9em;
     }
 
     /* ==== Gallery Section ====== */
@@ -575,7 +579,7 @@
         padding-top: 2em !important;
     }
 
-    /* ==== Contact Section ====== */
+    /* ==== Footer Section ====== */
 
     footer .footer-top {
         background-color: black;

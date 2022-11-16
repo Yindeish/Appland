@@ -880,6 +880,8 @@ footer .footer-newsletter .container .row p {
 
 footer .footer-newsletter .container .row form {
     display: flex;
+    justify-content: space-between !important;
+    gap: 0em !important;
     width: 100%;
     height: fit-content;
     background-color: white;

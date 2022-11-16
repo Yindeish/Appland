@@ -128,6 +128,14 @@
 
     .testimonials .swiper-slide .testimonial-item {
         height: fit-content !important;
+        padding: 0em 3em !important;
+    }
+
+    /* ==== Pricing Section ====== */
+
+    #pricing.pricing .row.no-gutters .col-lg-4.box {
+        padding: 1em !important;
+        gap: .5em !important;
     }
 
     /* ==== FAQ Section ====== */
@@ -141,7 +149,7 @@
 
     .contact {
         padding-bottom: 0em !important;
-        height: 197vh !important;
+        height: 203vh !important;
     }
 
     #contact.contact .container {
@@ -177,17 +185,24 @@
         font-size: small;
     }
 
+    footer .footer-top .container .row .col-lg-3  p strong {
+        color: white !important;
+    }
+
 }
 
 @media screen and (max-width: 393px) {
 
+    /* ======= Header Section ======= */
+
+    header .navbar .nav-link-container.nav-link-container-active .after {
+        top: 30% !important;
+    }
+
     /* ==== Hero Section ====== */
 
     #hero .container .row .col-lg-6.order-1 {
-        /* width: 75vw !important;
-        height: 28vh !important; */
         padding: 0em;
-        /* margin-left: 31.5vw; */
     }
 
     /* ==== Details Section ====== */
@@ -217,6 +232,12 @@
         height: fit-content !important;
     }
 
+    /* ==== Contact Section ====== */
+
+    #contact.contact {
+        height: 140vh !important;
+    }
+
     .contact .container > .row {
         grid-template-columns: 1fr;
         grid-template-rows: minmax(200px, auto) minmax(200px, auto);
@@ -230,7 +251,7 @@
     
     .contact .container > .row > .col-lg-6 > .row,
     .contact .container > .row > .col-lg-6 > form {
-        width: 56% !important;
+        width: 90% !important;
         margin-left: unset !important;
         margin: auto !important;
     }
@@ -261,28 +282,216 @@
         padding-left: 1em !important; 
     }
 
+    footer .footer-top .container .row .col-lg-3  p strong {
+        color: white !important;
+    }
+
 }
 
 @media screen and (max-width: 375px) {
 
     /* ==== Hero Section ====== */
 
+    #hero.hero {
+        height: 55vh !important;
+    }
+
     #hero .container .row .col-lg-6.order-1 {
-        /* height: 33vh !important; */
+        margin-top: 5em !important;
+    }
+
+    /* ==== Gallery Section ====== */
+
+    #gallery.gallery .container {
+        gap: 2.5em !important;
+    }
+
+    #gallery.gallery .carousel-inner {
+        height: 55vh !important;
+    }
+
+    /* ==== Testimonials Section ====== */
+
+    section#testimonials.testimonials {
+        /* height: 77vh !important; */
+        height: fit-content !important;
+    }
+
+    /* ==== Contact Section ====== */
+
+    section#contact.contact {
+        height: 202vh !important;
     }
 
 }
 
+@media screen and (max-width: 360px) {
+
+    /* ==== Testimonials Section ====== */
+
+    section#testimonials.testimonials {
+        height: 69vh !important;
+    }
+
+    #testimonials.testimonials .swiper-slide .testimonial-item  {
+        width: 78% !important;
+        padding-right: .5em !important;
+    }
+
+    .swiper-pagination-btn {
+        top: 105% !important;
+    }
+
+    /* ==== Contact Section ====== */
+
+    section#contact.contact {
+        height: 164vh !important;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    
+    /* ==== Headers Section ====== */
+
+    header .navbar .nav-link-container.nav-link-container-active .after {
+        top: 40% !important;
+    }
+
+    /* ==== Gallery Section ====== */
+
+    #gallery.gallery .container {
+        gap: 4.5em !important;
+    }
+
+    /* ==== Testimonials Section ====== */
+
+    section#testimonials.testimonials {
+        height: 100vh !important;
+    }
+    
+    #swiper-pagination-btn-1 {
+        left: 36% !important;
+    }
+    .swiper-pagination-btn#swiper-pagination-btn-2 {
+        left: 41% !important;
+    }
+    .swiper-pagination-btn#swiper-pagination-btn-3 {
+        left: 46% !important;
+    }
+    .swiper-pagination-btn#swiper-pagination-btn-4 {
+        left: 51% !important;
+    }
+    .swiper-pagination-btn#swiper-pagination-btn-5 {
+        left: 56% !important;
+    }
+
+    .testimonials .swiper-pagination-btn-active {
+        width: 13px !important;
+    }
+
+    #testimonials.testimonials .swiper-slide .testimonial-item {
+        margin-right: 1em !important;
+        width: 84% !important;
+    }
+
+    .testimonials .swiper-slide .testimonial-item img {
+        border-radius: 50% !important;  
+    }
+
+    /* ==== Contact Section ====== */
+
+    section#contact.contact {
+        height: 210vh !important;
+    }
+}
+
 @media screen and (max-width: 280px) {
+
+    /* ==== Headers Section ====== */
+
+    #navbar .nav-link-container > li {
+        text-align: left !important;
+        padding-left: 2em !important;
+    }
+
+    #navbar .nav-link-container > li > a {
+        padding: .4em !important;
+    }
+
+    #navbar .nav-link-container > li:nth-child(8) {
+        padding-left: 1em !important;
+    }
+
+    header .navbar .nav-link-container.nav-link-container-active .after {
+        padding: 0.3em !important;
+    }
+
+    #navbar > ul > li.dropdown-1 > ul > li.dropdown-2 .dropdown-list-2 {
+        left: -9px !important;
+        padding: .6em;
+    }
 
     /* ==== Hero Section ====== */
 
+    #hero.hero {
+        background-position: 50% 24% !important;
+    }
+
     #hero .container .row .col-lg-6.order-1 {
-        /* width: 100vw !important; */
-        /* height: 100vh !important; */
-        /* padding-top: 20em !important; */
         margin-left: 0vw !important;
-        /* grid-column: 1 / -1 !important; */
+    }
+
+    #hero .container .row .col-lg-6.order-1 #google-play {
+        margin-left: 5vw !important;
+    }
+
+    /* ==== Gallery Section ====== */
+
+    #gallery.gallery .carousel-inner {
+        width: 80% !important;
+        height: 47vh !important;
+        margin: auto !important;
+    }
+
+    /* ==== Testimonials Section ====== */
+
+    section#testimonials.testimonials {
+        height: 91vh !important;
+    }
+
+    .swiper-pagination-btn {
+        top: 102% !important;
+    }
+
+    #testimonials.testimonials .swiper-slide .testimonial-item {
+        width: 87% !important;
+    }
+
+    #swiper-wrapper .swiper-slide .testimonial-item img {
+        width: 90px !important;
+        height: 90px !important;
+        border: 5px solid white !important;
+        margin-left: -5em !important;
+    }
+
+    /* ==== Pricing Section ====== */
+
+    #pricing.pricing .row.no-gutters .col-lg-4.box {
+        padding: .5em !important;
+    }
+
+    .pricing .row.no-gutters .col-lg-4.box ul {
+        display: flex;
+        flex-direction: column;
+        gap: .5em;
+        padding-left: 1rem;
+    }
+
+    /* ==== Contact Section ====== */
+
+    section#contact.contact {
+        height: 191vh !important;
     }
 
 }
