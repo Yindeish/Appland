@@ -24,9 +24,11 @@ export default class GalleryEvents {
         }, 100)
     }
     runEvents() {
-        if( this.screenView >= '700') {
+        if( this.screenView >= '760') {
             this.slideGradients();
-        } else this.rotateGradients();
+        } else {
+            this.rotateGradients();  
+        } 
     }
 
 }
